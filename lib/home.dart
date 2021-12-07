@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class home extends StatelessWidget {
@@ -6,9 +7,29 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        // title: ('AbsenCo'),
-      )
+        body: Column(
+          children: <Widget>[
+            Container(
+              constraints: BoxConstraints.expand(
+                height: Theme.of(context).textTheme.headline4!.fontSize! * 1.1 + 200.0,
+              ),
+              padding: const EdgeInsets.all(8.0),
+              color: Colors.deepOrangeAccent,
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Informasi Akun',
+                style: TextStyle(
+                    fontSize: 20
+                ),
+              ),
+            ),
+            Container(
+              child: Text(
+                'Apakah',
+              ),
+            ),
+          ],
+        ),
     );
   }
 }
