@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.deepOrangeAccent
       ),
-      home: new MyHomePage(title: 'AbsenCo'),
+      home: home(),
+      // home: Login(),
+      // home: new MyHomePage(title: 'AbsenCo'),
 
     );
   }
@@ -83,41 +85,95 @@ class _MyHomePageState extends State<MyHomePage> {
                       primary: false,
                       children: <Widget>[
                         Card(
-                          elevation: 4,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Text(
-                                'Absen',
-                                style: TextStyle(
-                                  fontSize: 20
-                                ),
-                              ),
-                            ],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10)
+                          ),
+                          elevation: 6,
+                          child: InkWell(
+                            onTap: () {
+                              print("pressed");
+                            },
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Absen',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 20
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Card(
-                          elevation: 4,
-                          child: Column(
-                            children: <Widget>[
-
-                            ],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+                          elevation: 6,
+                          child: InkWell(
+                            onTap: () {
+                              print("pressed");
+                            },
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Absen',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 20
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Card(
-                          elevation: 4,
-                          child: Column(
-                            children: <Widget>[
-
-                            ],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+                          elevation: 6,
+                          child: InkWell(
+                            onTap: () {
+                              print("pressed");
+                            },
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Absen',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 20
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Card(
-                          elevation: 4,
-                          child: Column(
-                            children: <Widget>[
-
-                            ],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10)
+                          ),
+                          elevation: 6,
+                          child: InkWell(
+                            onTap: () {
+                              print("pressed");
+                            },
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Absen',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      fontSize: 20
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
