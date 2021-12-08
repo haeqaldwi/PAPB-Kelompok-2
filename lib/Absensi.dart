@@ -1,13 +1,16 @@
-class  extends StatefulWidget {
-  const ({Key? key}) : super(key: key);
+import 'package:flutter/cupertino.dart';
+
+class Absensi extends StatefulWidget {
+  const Absensi({Key? key}) : super(key: key);
 
   @override
-  _State createState() => _State();
+  _AbsensiState createState() => _AbsensiState();
 }
 
-class _State extends State<> {
+class _AbsensiState extends State<Absensi> {
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
+
